@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';  
+import React, {useEffect} from 'react';  
 import Pushy from 'pushy-sdk-web';
 import Header from './Header';
 
@@ -17,6 +17,13 @@ function App() {
     // Handle registration errors
     console.error(err);
   });
+  useEffect(()=>{
+    if (!("Notification" in window)) {
+      console.log("This browser does not support desktop notification");
+    } else {
+      Notification.requestPermission();
+    }
+  }, [])
   return (
     <div className="App">
       <h1>Notifications</h1>
