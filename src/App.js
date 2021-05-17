@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';  
 import Pushy from 'pushy-sdk-web';
+import Header from './Header';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>Notifications</h1>
+      <Header />
 
     </div>
   );
