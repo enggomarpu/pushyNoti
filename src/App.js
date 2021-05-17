@@ -17,11 +17,11 @@ function App() {
   }, [])
 
   const askUserPermission = async () => {
-    if (!("Notification" in window)) {
-         console.log("This browser does not support desktop notification");
-       } else {
+    // if (!("Notification" in window)) {
+    //      console.log("This browser does not support desktop notification");
+    //    } else {
         return await Notification.requestPermission();
-       }
+       //}
     
   }
   Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
