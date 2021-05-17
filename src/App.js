@@ -4,11 +4,11 @@ import Pushy from 'pushy-sdk-web';
 
 
 function App() {
-  
+
   Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
     // Print device token to console
     console.log('Pushy device token: ' + deviceToken);
-    setDeviceTokenApp(deviceToken);
+    //setDeviceTokenApp(deviceToken);
 
     // Succeeded, optionally do something to alert the user
   }).catch(function (err) {
