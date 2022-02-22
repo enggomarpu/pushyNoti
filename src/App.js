@@ -41,7 +41,7 @@ function App() {
     // At last, if the user has denied notifications, and you
     // want to be respectful there is no need to bother them any more.
   }
-  Pushy.register({ appId: '607d3e9ebe50e00f1b8f55ab' }).then(function (deviceToken) {
+  Pushy.register({ appId: '6214f12aca130a4f54f56532' }).then(function (deviceToken) {
     // Print device token to console
     console.log('Pushy device token: ' + deviceToken);
     //setDeviceTokenApp(deviceToken);
